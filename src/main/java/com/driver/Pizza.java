@@ -63,27 +63,27 @@ public class Pizza{
               this.price+=20;
               istakeawayAdded=true;
         }
-
     }
 
     public String getBill(){
         // your code goes here
 
-         if(!isbillgenrate){
+         if(!isbillgenrate) {
 
-             if(isExtraCheeseAdded){
-                 this.bill+="Extra Cheese Added: "+this.cheese+"\n";
+             if (isExtraCheeseAdded) {
+                 this.bill += "Extra Cheese Added: " + this.cheese + "\n";
              }
-             if(isExtraToppingAdded){
-                 this.bill+="Extra Topping Added: "+this.toppings+"\n";
+             if (isExtraToppingAdded) {
+                 this.bill += "Extra Topping Added: " + this.toppings + "\n";
              }
-             if (istakeawayAdded){
-                 this.bill+="Paperbag Added: "+"20"+"\n";
+             if (istakeawayAdded) {
+                 this.bill += "Paperbag Added: " + "20" + "\n";
              }
-                 this.bill+="Total Price: "+this.price+"\n";
-                 isbillgenrate=true;
+             this.bill += "Total Price: " + this.price + "\n";
+
+                 isbillgenrate = true;
+
          }
-        return this.bill;
+           return this.bill;
     }
-
 }
